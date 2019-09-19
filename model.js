@@ -28,7 +28,7 @@ async function findById(id) {
     .first();
 }
 
-function remove(id) {
+async function remove(id) {
   return db("users")
   .where({ id })
   .delete()
